@@ -4,8 +4,8 @@ import "./Navbar.css";
 import { assets } from "../../Assets/assets";
 import { StoreContext } from "../../Context/StoreContext";
 
-const Navbar = ({ setShowLogin }) => {
-  const [menu, setMenu] = useState("home");
+const Navbar = ({ setShowLogin, menu, setMenu } ) => {
+  
   const {getTotalCartAmount} = useContext(StoreContext)
 
   return (
